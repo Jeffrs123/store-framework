@@ -1,8 +1,8 @@
 .infoCardHeadline {
   font-family: serif;
   font-size: 2.25rem;
-  font-weight: bold; /* normal; */
-  color: black; /*gray;*/
+  font-weight: bold;
+  color: black;
   border: 2px solid black;
   padding: 24px;
 }
@@ -16,8 +16,6 @@
 .infoCardCallActionContainer :global(.vtex-button):hover {
   color: gray;
   background-color: white;
-
-  /* background-color: blue; */
   border: transparent;
 }
 
@@ -30,10 +28,6 @@
   margin: 0 auto;
   padding: 0;
 }
-
-/* .infoCardCallToActionMode:hover {
-  background-color: white;
-} */
 
 .infoCardContainer--metal {
   background-color: #e1e1e1;
