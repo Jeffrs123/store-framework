@@ -1,6 +1,79 @@
 {
   "store.product": {
     "children": [
+      "flex-layout.row#main"
     ]
+  },
+  "flex-layout.row#main": {
+    "props": {
+      "marginTop": 6
+    },
+    "children": [
+      "flex-layout.col#left",
+      "flex-layout.col#right"
+    ]
+  },
+  "flex-layout.col#left": {
+    "children": [
+      "product-images"
+    ]
+  },
+  "flex-layout.col#right": {
+    "props": {
+      "verticalAlign": "middle",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "product-name",
+      "product-price",
+      "buy-button"
+    ]
+  },
+  // product-images
+  "product-images": {
+    "props": {
+      // "ModalZoom": "modal-layout#product-zoom",
+      // to use the ModalZoom, the product-images zoomMode value must be set as open-modal
+      // "zoomMode": "open-modal",
+      "aspectRatio": {
+        "desktop": "auto",
+        "phone": "16:9"
+      }
+    }
+  },
+  /* Others config to images
+  // "product-images.high-quality-image": {
+  //   "props": {
+  //     "zoomMode": "in-place-click",
+  //     "zoomFactor": 2
+  //   }
+  // },
+  // "modal-layout#product-zoom": {
+  //   "children": [
+  //     // you can put any other block inside the modal,
+  //     // this is just a normal modal
+  //     "flex-layout.row#product-name",
+  //     "product-images.high-quality-image"
+  //   ]
+  // },
+  */
+  "product-name": {
+    "props": {
+      // "showSKU": true,
+      // "showBrandName": true,
+      "showProductReference": true
+    }
+  },
+  "product-price": {
+    "props": {
+      "showSavings": true,
+      "showListPrice": true
+    }
+  },
+  "buy-button#product": {
+    "props": {
+      "isOneClickBuy": true,
+      "showTooltipOnSkuNotSelected": false
+    }
   }
 }
