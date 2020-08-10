@@ -28,8 +28,7 @@
             "menu-item#washers"
         ],
         "props": {
-            "orientation": "vertical",
-            "experimentalOptimizeRendering": true 
+            "orientation": "vertical"
         }
     },
 
@@ -52,8 +51,7 @@
             "menu-item#coffee"
         ],
         "props": {
-            "orientation": "vertical",
-            "experimentalOptimizeRendering": true 
+            "orientation": "vertical"
         }
     },
 
@@ -75,8 +73,7 @@
             "menu-item#tvs"
         ],
         "props": {
-            "orientation": "vertical",
-            "experimentalOptimizeRendering": true 
+            "orientation": "vertical"
         }
     }
 }
