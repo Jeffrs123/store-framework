@@ -9,9 +9,7 @@
             "orientation": "horizontal"
         }
     },
-
-
-    "menu-item#major-appliances": {
+    "menu-item#major": {
         "children": [
             "vtex.menu@2.x:submenu#major"
         ]
@@ -31,10 +29,7 @@
             "orientation": "vertical"
         }
     },
-
-
-
-    "menu-item#small-appliances": {
+    "menu-item#small": {
         "children": [
             "vtex.menu@2.x:submenu#small"
         ]
@@ -54,18 +49,40 @@
             "orientation": "vertical"
         }
     },
-
-
     "menu-item#electronics": {
+        "props": {
+            "type": "category",
+            "highlight": true,
+            "itemProps": {
+                "categoryId": 3,
+                "text": "Electronics"
+            }
+        },
         "children": [
             "vtex.menu@2.x:submenu#electronics"
         ]
     },
+
     "vtex.menu@2.x:submenu#electronics": {
         "children": [
             "vtex.menu@2.x:menu#electronics"
         ]
     },
+
+
+    // "menu-item#electronics": {
+    //     "children": [
+    //         "vtex.menu@2.x:submenu#electronics"
+    //     ]
+    // },
+    // "vtex.menu@2.x:submenu#electronics": {
+    //     "children": [
+    //         "vtex.menu@2.x:menu#electronics"
+    //     ] //,
+    //     //     "props": {
+    //     //         "orientation": "vertical"
+    //     //     }
+    // } //,
     "vtex.menu@2.x:menu#electronics": {
         "children": [
             "menu-item#cameras",
