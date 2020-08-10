@@ -56,7 +56,7 @@
         "props": {
             "text": "Área do conteúdo da tab-list.item com  tabId = majorAppliances",
             "textPosition": "CENTER",
-            "font": "t-heading-3"
+            "font": "t-heading-2"
         }
     },
     "rich-text#home2": {
