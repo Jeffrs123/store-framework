@@ -9,8 +9,10 @@
             "orientation": "horizontal"
         }
     },
+
+
     "menu-item#major-appliances": {
-        "blocks": [
+        "children": [
             "vtex.menu@2.x:submenu#major"
         ]
     },
@@ -26,14 +28,15 @@
             "menu-item#washers"
         ],
         "props": {
-            "orientation": "vertical"
+            "orientation": "vertical",
+            "experimentalOptimizeRendering": true 
         }
     },
 
 
 
     "menu-item#small-appliances": {
-        "blocks": [
+        "children": [
             "vtex.menu@2.x:submenu#small"
         ]
     },
@@ -49,13 +52,14 @@
             "menu-item#coffee"
         ],
         "props": {
-            "orientation": "vertical"
+            "orientation": "vertical",
+            "experimentalOptimizeRendering": true 
         }
     },
 
 
     "menu-item#electronics": {
-        "blocks": [
+        "children": [
             "vtex.menu@2.x:submenu#electronics"
         ]
     },
@@ -71,7 +75,8 @@
             "menu-item#tvs"
         ],
         "props": {
-            "orientation": "vertical"
+            "orientation": "vertical",
+            "experimentalOptimizeRendering": true 
         }
     }
 }
